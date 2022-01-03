@@ -142,8 +142,8 @@ public abstract class GenericRepository<T>{
         try {
             entityManager.getTransaction().begin();
 
-            String query = String.format("TRUNCATE TABLE %ss",
-                    entityClass.getSimpleName());
+            String query = String.format("TRUNCATE TABLE %s",
+                    entityClass.getSimpleName().toLowerCase(Locale.ROOT));
 
             entityManager.createNativeQuery(query).executeUpdate();
             entityManager.getTransaction().commit();

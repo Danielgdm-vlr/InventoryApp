@@ -36,10 +36,10 @@
                     </Region>
                     <Button fx:id="buttonAddProduct">
                     </Button>
-                    <!--                    <Button fx:id="buttonResetAllStocks">-->
-                    <!--                    </Button>-->
-                    <!--                    <Button fx:id="buttonDeleteAll">-->
-                    <!--                    </Button>-->
+                    <Button fx:id="buttonResetAllStocks">
+                    </Button>
+                    <Button fx:id="buttonDeleteAll">
+                    </Button>
                 </HBox>
             </VBox>
         </VBox>
