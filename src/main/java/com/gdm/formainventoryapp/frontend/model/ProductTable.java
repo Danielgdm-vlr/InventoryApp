@@ -9,6 +9,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Data
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @ToString
 public class ProductTable implements Serializable {
 
@@ -16,6 +17,8 @@ public class ProductTable implements Serializable {
 
     private @NonNull Long id;
     private @NonNull Label name;
+
+    @EqualsAndHashCode.Include
     private @NonNull Integer stockInSalon;
     private @NonNull Integer stockToBuy;
     private @NonNull Integer stockPerWeek;
